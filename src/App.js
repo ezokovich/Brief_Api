@@ -1,4 +1,3 @@
-import React, { Component }  from 'react';
 import './App.css';
 import Create from "./ components/create";
 import { BrowserRouter as Router, Route } from 'react-router-dom' 
@@ -11,9 +10,12 @@ function App() {
      <h2 className="main-header">React Crud Operations</h2>
       
       <Route path='/' exact>
-      <div>
+     
         <Create/>
-      </div>
+ 
+      </Route>
+      <Route path='/read'>
+        <Read  />
       </Route>
     </div>
     </Router>
