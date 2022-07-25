@@ -5,8 +5,8 @@ import {  Form } from 'semantic-ui-react';
 
 export default function Create() {
     const [id, setid] = useState('');
-    const [Nom, setFirstName] = useState('');
-    const [Surnom, setLastName] = useState('');
+    const [nom, setFirstName] = useState('');
+    const [surnom, setLastName] = useState('');
     const [wins, setwins] = useState('');
     const [losses, setlosses] = useState('');
     const [points_scored, setpoints_scored] = useState('');
@@ -19,9 +19,11 @@ export default function Create() {
 //     console.log(losses);
 //     console.log(points_scored);
 // }
+
+
     const postData = () => {
-        axios.post("http://localhost:3001/api/v1/stats", { id,wins,losses,points_scored,Nom,Surnom,
-})
+
+        axios.post("http://localhost:3001/api/v1/stats", { id,wins,losses,points_scored,nom,surnom,})
     }
     return (
         
