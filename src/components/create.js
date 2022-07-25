@@ -22,8 +22,8 @@ export default function Create() {
 
 
     const postData = () => {
-
-        axios.post("http://localhost:3001/api/v1/stats", { id,wins,losses,points_scored,nom,surnom,})
+        const article = ({ id,wins,losses,points_scored,nom,surnom, });
+        axios.post("http://localhost:3001/api/v1/stats",  article)
     }
     return (
         
